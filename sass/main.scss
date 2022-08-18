@@ -1,0 +1,9 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./base/typography.scss";
+@import "./components/buttons";
+
+img{
+    height: 100px;
+}
