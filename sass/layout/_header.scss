@@ -10,7 +10,7 @@
         width: 100%;
         padding: 3% 0% 2% 0%;
         img{
-            width: 40%;
+            width: 35%;
             height:fit-content;
         }
     }
@@ -18,19 +18,44 @@
         display: flex;
         justify-content: center;
         background-color: rgb(197, 195, 195);
+        padding: 2% 0%;
         i{
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
-            left: -5%;
+            left: -5vw;
+            font-size: 3.5vw;
         }
         p{
-            margin-left: -12px;
+            margin: 0px 0px 0px -12px;
+            font-size: 3.5vw;
         }
     }
     &__menu{
-
+        display: flex;
+        flex-flow: column wrap;
+        background-color: rgb(221, 221, 221);
+        padding: 6% 0%;
+        h1{
+            text-align: center;
+            margin: 0px;
+            padding: 0px 20%;
+            font-size: 6vw;
+        }
+        p{
+            text-align: center;
+            margin: 0px;
+            padding: 3% 10%;
+            font-size: 4.5vw;
+        }
+        .centered {
+            display: flex;
+            justify-content: center;
+            margin: 3% 0% 5% 0%;
+            button{
+            }
+        }
     }
 
 }

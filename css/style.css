@@ -7,6 +7,18 @@ body, html {
   height: 100%;
 }
 
+.btn {
+  border: none;
+  border-radius: 50px;
+  padding: 3% 5%;
+  color: white;
+  font-size: 3.5vw;
+  width: fit-content;
+}
+.btn--pink {
+  background-color: #ff93e1;
+}
+
 .header {
   display: flex;
   flex-flow: column wrap;
@@ -21,23 +33,49 @@ body, html {
   padding: 3% 0% 2% 0%;
 }
 .header__img img {
-  width: 40%;
+  width: 35%;
   height: fit-content;
 }
 .header__nav {
   display: flex;
   justify-content: center;
   background-color: rgb(197, 195, 195);
+  padding: 2% 0%;
 }
 .header__nav i {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  left: -5%;
+  left: -5vw;
+  font-size: 3.5vw;
 }
 .header__nav p {
-  margin-left: -12px;
+  margin: 0px 0px 0px -12px;
+  font-size: 3.5vw;
+}
+.header__menu {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgb(221, 221, 221);
+  padding: 6% 0%;
+}
+.header__menu h1 {
+  text-align: center;
+  margin: 0px;
+  padding: 0px 20%;
+  font-size: 6vw;
+}
+.header__menu p {
+  text-align: center;
+  margin: 0px;
+  padding: 3% 10%;
+  font-size: 4.5vw;
+}
+.header__menu .centered {
+  display: flex;
+  justify-content: center;
+  margin: 3% 0% 5% 0%;
 }
 
 /*# sourceMappingURL=style.css.map */
