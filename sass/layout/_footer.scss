@@ -12,8 +12,6 @@ footer{
             list-style: none;
             padding: 1.5vw 0vw;
             a{
-                font-style: none;
-                text-decoration: none;
                 color: white;
                 i{
                     width: 20px;
@@ -23,6 +21,9 @@ footer{
                 strong{
                     font-weight: bold;
                 }
+            a:visited{
+                color:white
+            }
             }
         }
     }

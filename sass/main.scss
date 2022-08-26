@@ -10,7 +10,8 @@ body, html{
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./base/typography.scss";
+@import "./base/typography";
 @import "./components/buttons";
+@import "./components/restaurants-cards";
 @import "./layout/header";
 @import "./layout/footer";

@@ -1,0 +1,58 @@
+main{
+    height : fit-content;
+    padding: 5vw;
+    background-color: rgb(211, 211, 211);
+    h1{
+        padding-top: 5vw;
+    }
+    .card-restaurant{
+        margin: 5vw 0vw;
+        border-radius: $size-border-radius-card-restaurant;
+        display: flex;
+        flex-flow: wrap column;
+        height : fit-content;
+        background-color: white;
+        box-shadow: 0px 5px 10px #999;
+        &__new-content{
+            position: absolute;
+            background-color: $color-tertiary;
+        }
+        &__image{
+            display: flex;
+            height: 150px;
+            position: relative;
+            overflow: hidden;
+            border-radius: $size-border-radius-card-restaurant $size-border-radius-card-restaurant 0px 0px;
+            img{
+                height: 150px;
+                object-position: center;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+        &__content{
+            display: flex;
+            height: fit-content;
+            padding: 5vw 3vw;
+            &__text{
+                h2{
+                    margin: 0px;
+                }
+                p{
+                    margin: 0px;
+                }
+            }
+            i{
+                display: flex;
+                flex: 100;
+                align-items: center;
+                justify-content: flex-end;
+                margin-right: 3vw;
+                font-size: 6vw;
+            }
+        }
+    }
+    .card-restaurant:visited{
+        color:black;
+    }
+}
