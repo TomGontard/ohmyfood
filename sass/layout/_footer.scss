@@ -1,0 +1,29 @@
+footer{
+    background-color: black;
+    color: white;
+    padding: 5vw;
+    img{
+        filter: invert(100%);
+        height: 5vw;
+    }
+    ul{
+        padding: 0%;
+        li{
+            list-style: none;
+            padding: 1.5vw 0vw;
+            a{
+                font-style: none;
+                text-decoration: none;
+                color: white;
+                i{
+                    width: 20px;
+                    padding-right: 10px;
+                    text-align: center;
+                }
+                strong{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
