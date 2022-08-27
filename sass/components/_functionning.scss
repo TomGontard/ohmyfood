@@ -1,0 +1,37 @@
+.functionning{
+    padding: 5vw;
+    h1{
+
+    }
+    &__card-explanation{
+        background-color: white;
+        box-shadow: 0px 5px 10px #999;
+        border-radius: 25px;
+        display: flex;
+        flex-flow: wrap row;
+        padding: 5vw;
+        margin: 5vw;
+        &__card-number{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-primary;
+            width: 24px;
+            height: 24px;
+            border-radius: $size-border-radius-card-restaurant;
+            margin-left: -25px;
+            color: white;
+        }
+        i{
+            margin: 0vw 5vw;
+            display: flex;
+            align-items: center;
+        }
+        p{
+            margin: 0px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
