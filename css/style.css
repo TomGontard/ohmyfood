@@ -107,6 +107,7 @@ main .card-restaurant__content {
   display: flex;
   height: fit-content;
   padding: 5vw 3vw;
+  color: black;
 }
 main .card-restaurant__content__text h2 {
   margin: 0px;
