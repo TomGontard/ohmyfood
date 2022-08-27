@@ -142,7 +142,7 @@ main .card-restaurant:visited {
   padding: 3% 0% 2% 0%;
 }
 .header__img img {
-  width: 35%;
+  width: 40vw;
   height: fit-content;
 }
 .header__nav {
