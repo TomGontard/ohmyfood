@@ -19,17 +19,16 @@
         justify-content: center;
         background-color: rgb(197, 195, 195);
         padding: 2% 0%;
+        font-size: $font-size-text;
         i{
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
             left: -5vw;
-            font-size: 3.5vw;
         }
         p{
             margin: 0px 0px 0px -12px;
-            font-size: 3.5vw;
         }
     }
     &__menu{
@@ -41,20 +40,18 @@
             text-align: center;
             margin: 0px;
             padding: 0px 20%;
-            font-size: 6vw;
+            font-size: $font-size-titles;
         }
         p{
             text-align: center;
             margin: 0px;
             padding: 3% 10%;
-            font-size: 4.5vw;
+            font-size: $font-size-subtitles;
         }
         .centered {
             display: flex;
             justify-content: center;
             margin: 3% 0% 5% 0%;
-            button{
-            }
         }
     }
 

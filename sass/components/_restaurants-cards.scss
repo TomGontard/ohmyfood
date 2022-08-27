@@ -4,6 +4,7 @@ main{
     background-color: rgb(211, 211, 211);
     h1{
         padding-top: 5vw;
+        font-size: $font-size-titles;
     }
     .card-restaurant{
         margin: 5vw 0vw;
@@ -37,9 +38,11 @@ main{
             &__text{
                 h2{
                     margin: 0px;
+                    font-size: $font-size-subtitles;
                 }
                 p{
                     margin: 0px;
+                    font-size: $font-size-text;
                 }
             }
             i{
@@ -48,7 +51,7 @@ main{
                 align-items: center;
                 justify-content: flex-end;
                 margin-right: 3vw;
-                font-size: 6vw;
+                font-size: $font-size-subtitles;
             }
         }
     }
