@@ -28,20 +28,23 @@ a {
 .btn {
   border: none;
   border-radius: 50px;
-  padding: 3% 5%;
+  padding: 3vw 5vw;
   color: white;
-  font-size: 4vw;
+  font-size: 5.3vw;
   width: fit-content;
 }
 .btn--pink {
   background-color: #9356DC;
+}
+.btn--enlarged {
+  padding: 5vw 10vw;
 }
 
 .functionning {
   padding: 5vw;
 }
 .functionning h1 {
-  font-size: 6vw;
+  font-size: 8vw;
 }
 .functionning__card-explanation {
   background-color: white;
@@ -51,7 +54,7 @@ a {
   flex-flow: wrap row;
   padding: 5vw;
   margin: 5vw;
-  font-size: 4.5vw;
+  font-size: 5.3vw;
 }
 .functionning__card-explanation__card-number {
   display: flex;
@@ -68,6 +71,7 @@ a {
   margin: 0vw 5vw;
   display: flex;
   align-items: center;
+  color: grey;
 }
 .functionning__card-explanation p {
   margin: 0px;
@@ -98,7 +102,7 @@ a {
   justify-content: center;
   background-color: rgb(197, 195, 195);
   padding: 2% 0%;
-  font-size: 4vw;
+  font-size: 5.3vw;
 }
 .header__nav i {
   display: flex;
@@ -116,7 +120,7 @@ a {
   padding: 4vw 0vw 3vw 4vw;
 }
 .header-restaurant__nav i {
-  font-size: 6vw;
+  font-size: 8vw;
   padding-right: 18vw;
 }
 .header-restaurant__nav img {
@@ -146,13 +150,13 @@ a {
   text-align: center;
   margin: 0px;
   padding: 0px 20%;
-  font-size: 6vw;
+  font-size: 8vw;
 }
 .header__menu p {
   text-align: center;
   margin: 0px;
   padding: 3% 10%;
-  font-size: 4.5vw;
+  font-size: 6.5vw;
 }
 .header__menu .centered {
   display: flex;
@@ -163,11 +167,11 @@ a {
 .main {
   height: fit-content;
   padding: 5vw;
-  background-color: rgb(211, 211, 211);
+  background-color: white;
 }
 .main-index h1 {
   padding-top: 5vw;
-  font-size: 6vw;
+  font-size: 8vw;
 }
 .main-index__card-restaurant {
   margin: 5vw 0vw;
@@ -203,11 +207,11 @@ a {
 }
 .main-index__card-restaurant__content__text h2 {
   margin: 0px;
-  font-size: 4.5vw;
+  font-size: 6.5vw;
 }
 .main-index__card-restaurant__content__text p {
   margin: 0px;
-  font-size: 4vw;
+  font-size: 5.3vw;
 }
 .main-index__card-restaurant__content i {
   display: flex;
@@ -215,7 +219,7 @@ a {
   align-items: center;
   justify-content: flex-end;
   margin-right: 3vw;
-  font-size: 4.5vw;
+  font-size: 6.5vw;
 }
 .main-index__card-restaurant:visited {
   color: black;
@@ -224,6 +228,11 @@ a {
   border-radius: 10vw 10vw 0vw 0vw;
   margin-top: -10vw;
   height: fit-content;
+}
+.main-menu h2 {
+  margin: 0vw 0vw 2vw 0vw;
+  padding: 10vw 0vw 0vw 0vw;
+  font-size: 8vw;
 }
 .main-menu__header {
   display: flex;
@@ -238,11 +247,7 @@ a {
   flex: 100;
   justify-content: flex-end;
   padding-right: 5vw;
-  font-size: 6vw;
-}
-.main-menu h2 {
-  margin: 0vw 0vw 2vw 0vw;
-  padding: 8vw 0vw 0vw 0vw;
+  font-size: 8vw;
 }
 .main-menu__subcategory__choice {
   background-color: white;
@@ -251,8 +256,8 @@ a {
   display: flex;
   flex-flow: wrap row;
   padding: 2.5vw;
-  margin-bottom: 3vw;
-  font-size: 4vw;
+  margin-bottom: 5vw;
+  font-size: 5.3vw;
 }
 .main-menu__subcategory__choice__text h3 {
   margin: 0px;
@@ -272,6 +277,12 @@ a {
   padding: 0vw 3vw;
   margin: 0px;
 }
+.main-menu__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12vw 0vw 15vw 0vw;
+}
 
 footer {
   background-color: black;
@@ -284,7 +295,7 @@ footer img {
 }
 footer ul {
   padding: 0%;
-  font-size: 4.5vw;
+  font-size: 5.3vw;
 }
 footer ul li {
   list-style: none;

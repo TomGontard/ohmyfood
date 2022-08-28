@@ -1,11 +1,14 @@
 .btn{
     border: none;
     border-radius: 50px;
-    padding: 3% 5%;
+    padding: 3vw 5vw;
     color: white;
     font-size: $font-size-text;
     width: fit-content;
     &--pink{
         background-color: $color-primary;
+    }
+    &--enlarged{
+        padding: 5vw 10vw;
     }
 }

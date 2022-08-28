@@ -2,9 +2,11 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-light-gray: lighten(grey,50%);
+$color-strong-gray: grey;
 
 $size-border-radius-card-restaurant: 15px;
 
-$font-size-titles:6vw;
-$font-size-subtitles:4.5vw;
-$font-size-text: 4vw;
+$font-size-titles:8vw;
+$font-size-subtitles:6.5vw;
+$font-size-text: 5.3vw;

@@ -11,7 +11,7 @@
         flex-flow: wrap row;
         padding: 5vw;
         margin: 5vw;
-        font-size: $font-size-subtitles;
+        font-size: $font-size-text;
         &__card-number{
             display: flex;
             align-items: center;
@@ -27,6 +27,7 @@
             margin: 0vw 5vw;
             display: flex;
             align-items: center;
+            color: $color-strong-gray;
         }
         p{
             margin: 0px;
