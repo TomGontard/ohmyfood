@@ -7,6 +7,14 @@ body, html {
   height: 100%;
 }
 
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../css/polices/Shrikhand/Shrikhand-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/css/polices/Roboto/Roboto-Regular.ttf);
+}
 mark {
   text-transform: capitalize;
   background-color: transparent;
@@ -68,67 +76,6 @@ a {
   align-items: center;
 }
 
-main {
-  height: fit-content;
-  padding: 5vw;
-  background-color: rgb(211, 211, 211);
-}
-main h1 {
-  padding-top: 5vw;
-  font-size: 6vw;
-}
-main .card-restaurant {
-  margin: 5vw 0vw;
-  border-radius: 15px;
-  display: flex;
-  flex-flow: wrap column;
-  height: fit-content;
-  background-color: white;
-  box-shadow: 0px 5px 10px #999;
-}
-main .card-restaurant__new-content {
-  position: absolute;
-  background-color: #99E2D0;
-}
-main .card-restaurant__image {
-  display: flex;
-  height: 150px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px 15px 0px 0px;
-}
-main .card-restaurant__image img {
-  height: 150px;
-  object-position: center;
-  object-fit: cover;
-  width: 100%;
-}
-main .card-restaurant__content {
-  display: flex;
-  height: fit-content;
-  padding: 5vw 3vw;
-  color: black;
-}
-main .card-restaurant__content__text h2 {
-  margin: 0px;
-  font-size: 4.5vw;
-}
-main .card-restaurant__content__text p {
-  margin: 0px;
-  font-size: 4vw;
-}
-main .card-restaurant__content i {
-  display: flex;
-  flex: 100;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 3vw;
-  font-size: 4.5vw;
-}
-main .card-restaurant:visited {
-  color: black;
-}
-
 .header {
   display: flex;
   flex-flow: column wrap;
@@ -163,6 +110,32 @@ main .card-restaurant:visited {
 .header__nav p {
   margin: 0px 0px 0px -12px;
 }
+.header-restaurant__nav {
+  display: flex;
+  height: fit-content;
+  padding: 4vw 0vw 3vw 4vw;
+}
+.header-restaurant__nav i {
+  font-size: 6vw;
+  padding-right: 18vw;
+}
+.header-restaurant__nav img {
+  height: 8vw;
+  text-align: center;
+}
+.header-restaurant__img {
+  display: flex;
+  height: 70vw;
+  position: relative;
+  overflow: hidden;
+}
+.header-restaurant__img img {
+  height: inherit;
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+}
 .header__menu {
   display: flex;
   flex-flow: column wrap;
@@ -185,6 +158,119 @@ main .card-restaurant:visited {
   display: flex;
   justify-content: center;
   margin: 3% 0% 5% 0%;
+}
+
+.main {
+  height: fit-content;
+  padding: 5vw;
+  background-color: rgb(211, 211, 211);
+}
+.main-index h1 {
+  padding-top: 5vw;
+  font-size: 6vw;
+}
+.main-index__card-restaurant {
+  margin: 5vw 0vw;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: wrap column;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0px 5px 10px #999;
+}
+.main-index__card-restaurant__new-content {
+  position: absolute;
+  background-color: #99E2D0;
+}
+.main-index__card-restaurant__image {
+  display: flex;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+}
+.main-index__card-restaurant__image img {
+  height: 150px;
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+.main-index__card-restaurant__content {
+  display: flex;
+  height: fit-content;
+  padding: 5vw 3vw;
+  color: black;
+}
+.main-index__card-restaurant__content__text h2 {
+  margin: 0px;
+  font-size: 4.5vw;
+}
+.main-index__card-restaurant__content__text p {
+  margin: 0px;
+  font-size: 4vw;
+}
+.main-index__card-restaurant__content i {
+  display: flex;
+  flex: 100;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 3vw;
+  font-size: 4.5vw;
+}
+.main-index__card-restaurant:visited {
+  color: black;
+}
+.main-menu {
+  border-radius: 10vw 10vw 0vw 0vw;
+  margin-top: -10vw;
+  height: fit-content;
+}
+.main-menu__header {
+  display: flex;
+}
+.main-menu__header h1 {
+  font-size: 8vw;
+  margin: 0px;
+}
+.main-menu__header i {
+  display: flex;
+  align-items: center;
+  flex: 100;
+  justify-content: flex-end;
+  padding-right: 5vw;
+  font-size: 6vw;
+}
+.main-menu h2 {
+  margin: 0vw 0vw 2vw 0vw;
+  padding: 8vw 0vw 0vw 0vw;
+}
+.main-menu__subcategory__choice {
+  background-color: white;
+  box-shadow: 0px 5px 10px #999;
+  border-radius: 3vw;
+  display: flex;
+  flex-flow: wrap row;
+  padding: 2.5vw;
+  margin-bottom: 3vw;
+  font-size: 4vw;
+}
+.main-menu__subcategory__choice__text h3 {
+  margin: 0px;
+}
+.main-menu__subcategory__choice__text p {
+  margin: 0px;
+  width: 72vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.main-menu__subcategory__choice__pricetag {
+  display: flex;
+  flex: 100;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0vw 3vw;
+  margin: 0px;
 }
 
 footer {
