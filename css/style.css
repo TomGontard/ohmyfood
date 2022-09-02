@@ -9,11 +9,11 @@ body, html {
 
 @font-face {
   font-family: "Shrikhand";
-  src: url(../css/polices/Shrikhand/Shrikhand-Regular.ttf);
+  src: url(polices/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Roboto";
-  src: url(/css/polices/Roboto/Roboto-Regular.ttf);
+  src: url(polices/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 mark {
   text-transform: capitalize;
@@ -185,6 +185,12 @@ a {
 .main-index__card-restaurant__new-content {
   position: absolute;
   background-color: #99E2D0;
+  color: #32b091;
+  padding: 0.5rem;
+  border-radius: 5px;
+  top: 1rem;
+  right: 0.75rem;
+  z-index: 4;
 }
 .main-index__card-restaurant__image {
   display: flex;
@@ -249,33 +255,64 @@ a {
   padding-right: 5vw;
   font-size: 8vw;
 }
+.main-menu__subcategory {
+  height: fit-content;
+}
 .main-menu__subcategory__choice {
   background-color: white;
   box-shadow: 0px 5px 10px #999;
   border-radius: 3vw;
   display: flex;
   flex-flow: wrap row;
-  padding: 2.5vw;
+  padding: 2.5vw 2.5vw 0vw 2.5vw;
   margin-bottom: 5vw;
-  font-size: 5.3vw;
+  font-size: 4.5vw;
+  height: fit-content;
+}
+.main-menu__subcategory__choice__text {
+  transform: translateX(0%);
+  transition: transform ease-out 0.3s;
 }
 .main-menu__subcategory__choice__text h3 {
   margin: 0px;
+  width: 70vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .main-menu__subcategory__choice__text p {
   margin: 0px;
-  width: 72vw;
+  width: 70vw;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .main-menu__subcategory__choice__pricetag {
   display: flex;
-  flex: 100;
+  width: fit-content;
   align-items: flex-end;
   justify-content: flex-end;
   padding: 0vw 3vw;
   margin: 0px;
+}
+.main-menu__subcategory__choice__check i {
+  display: flex;
+  width: 5vw;
+  align-items: center;
+  visibility: hidden;
+  background-color: #99E2D0;
+  color: white;
+  transform: translateX(100%);
+  transition: transform ease-out 0.3s;
+}
+.main-menu__subcategory__choice:hover .main-menu__subcategory__choice__text {
+  width: 65vw;
+  transform: translateX(0);
+}
+.main-menu__subcategory__choice:hover i {
+  transform: translateX(0);
+  visibility: visible;
+  width: fit-content;
 }
 .main-menu__button {
   display: flex;
