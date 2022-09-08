@@ -1,0 +1,6 @@
+@mixin reducing-text-lenght{
+    width: 70vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

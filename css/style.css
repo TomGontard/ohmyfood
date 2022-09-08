@@ -5,11 +5,16 @@ img {
 body, html {
   margin: 0px;
   height: 100%;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 @font-face {
   font-family: "Shrikhand";
   src: url(polices/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(polices/Roboto/Roboto-Light.ttf) format("truetype");
 }
 @font-face {
   font-family: "Roboto";
@@ -30,7 +35,7 @@ a {
   border-radius: 50px;
   padding: 3vw 5vw;
   color: white;
-  font-size: 5.3vw;
+  font-size: 5vw;
   width: fit-content;
 }
 .btn--pink {
@@ -44,7 +49,7 @@ a {
   padding: 5vw;
 }
 .functionning h1 {
-  font-size: 8vw;
+  font-size: 7vw;
 }
 .functionning__card-explanation {
   background-color: white;
@@ -54,7 +59,7 @@ a {
   flex-flow: wrap row;
   padding: 5vw;
   margin: 5vw;
-  font-size: 5.3vw;
+  font-size: 5vw;
 }
 .functionning__card-explanation__card-number {
   display: flex;
@@ -102,7 +107,7 @@ a {
   justify-content: center;
   background-color: rgb(197, 195, 195);
   padding: 2% 0%;
-  font-size: 5.3vw;
+  font-size: 5vw;
 }
 .header__nav i {
   display: flex;
@@ -120,7 +125,7 @@ a {
   padding: 4vw 0vw 3vw 4vw;
 }
 .header-restaurant__nav i {
-  font-size: 8vw;
+  font-size: 7vw;
   padding-right: 18vw;
 }
 .header-restaurant__nav img {
@@ -150,13 +155,13 @@ a {
   text-align: center;
   margin: 0px;
   padding: 0px 20%;
-  font-size: 8vw;
+  font-size: 7vw;
 }
 .header__menu p {
   text-align: center;
   margin: 0px;
   padding: 3% 10%;
-  font-size: 6.5vw;
+  font-size: 6vw;
 }
 .header__menu .centered {
   display: flex;
@@ -171,7 +176,7 @@ a {
 }
 .main-index h1 {
   padding-top: 5vw;
-  font-size: 8vw;
+  font-size: 7vw;
 }
 .main-index__card-restaurant {
   margin: 5vw 0vw;
@@ -213,11 +218,11 @@ a {
 }
 .main-index__card-restaurant__content__text h2 {
   margin: 0px;
-  font-size: 6.5vw;
+  font-size: 6vw;
 }
 .main-index__card-restaurant__content__text p {
   margin: 0px;
-  font-size: 5.3vw;
+  font-size: 5vw;
 }
 .main-index__card-restaurant__content i {
   display: flex;
@@ -225,7 +230,7 @@ a {
   align-items: center;
   justify-content: flex-end;
   margin-right: 3vw;
-  font-size: 6.5vw;
+  font-size: 6vw;
 }
 .main-index__card-restaurant:visited {
   color: black;
@@ -238,13 +243,16 @@ a {
 .main-menu h2 {
   margin: 0vw 0vw 2vw 0vw;
   padding: 10vw 0vw 0vw 0vw;
-  font-size: 8vw;
+  font-size: 7vw;
+  font-family: "Roboto-Light", "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
 }
 .main-menu__header {
   display: flex;
 }
 .main-menu__header h1 {
-  font-size: 8vw;
+  font-size: 7vw;
+  font-family: "shrikhand";
   margin: 0px;
 }
 .main-menu__header i {
@@ -253,7 +261,7 @@ a {
   flex: 100;
   justify-content: flex-end;
   padding-right: 5vw;
-  font-size: 8vw;
+  font-size: 7vw;
 }
 .main-menu__subcategory {
   height: fit-content;
@@ -286,6 +294,7 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
 }
 .main-menu__subcategory__choice__pricetag {
   display: flex;
@@ -332,7 +341,7 @@ footer img {
 }
 footer ul {
   padding: 0%;
-  font-size: 5.3vw;
+  font-size: 5vw;
 }
 footer ul li {
   list-style: none;
