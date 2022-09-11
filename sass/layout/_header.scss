@@ -36,9 +36,14 @@
             display: flex;
             height: fit-content;
             padding: 4vw 0vw 3vw 4vw;
-            i{
-                font-size: $font-size-titles;
-                padding-right: 18vw;
+            a{
+                &:visited{
+                    color:black;
+                }
+                i{
+                    font-size: $font-size-titles;
+                    padding-right: 18vw;
+                }    
             }
             img{
                 height: 8vw;
