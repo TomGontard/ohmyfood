@@ -241,11 +241,21 @@ a {
   height: fit-content;
 }
 .main-menu h2 {
-  margin: 0vw 0vw 2vw 0vw;
-  padding: 10vw 0vw 0vw 0vw;
+  margin: 0vw 0vw 5vw 0vw;
+  padding: 10vw 0vw 2vw 0vw;
   font-size: 7vw;
   font-family: "Roboto-Light", "Roboto", Arial, Helvetica, sans-serif;
   font-weight: lighter;
+  position: relative;
+}
+.main-menu h2::after {
+  content: "";
+  width: 14vw;
+  height: 1vw;
+  background-color: aquamarine;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .main-menu__header {
   display: flex;
