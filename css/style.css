@@ -4,6 +4,51 @@ body, html {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+  }
+}
 @font-face {
   font-family: "Shrikhand";
   src: url(polices/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
@@ -274,6 +319,7 @@ a {
 }
 .main-menu__subcategory {
   height: fit-content;
+  cursor: pointer;
 }
 .main-menu__subcategory__choice {
   background-color: white;
@@ -331,6 +377,34 @@ a {
   transform: translateX(0);
   visibility: visible;
   width: fit-content;
+}
+.main-menu .fade-in__300ms {
+  animation: fadeIn 2s 300ms ease-out both;
+  -webkit-animation: fadeIn 2s 300ms ease-out both;
+  -moz-animation: fadeIn 2s 300ms ease-out both;
+  -o-animation: fadeIn 2s 300ms ease-out both;
+  -ms-animation: fadeIn 2s 300ms ease-out both;
+}
+.main-menu .fade-in__500ms {
+  animation: fadeIn 2s 500ms ease-out both;
+  -webkit-animation: fadeIn 2s 500ms ease-out both;
+  -moz-animation: fadeIn 2s 500ms ease-out both;
+  -o-animation: fadeIn 2s 500ms ease-out both;
+  -ms-animation: fadeIn 2s 500ms ease-out both;
+}
+.main-menu .fade-in__700ms {
+  animation: fadeIn 2s 700ms ease-out both;
+  -webkit-animation: fadeIn 2s 700ms ease-out both;
+  -moz-animation: fadeIn 2s 700ms ease-out both;
+  -o-animation: fadeIn 2s 700ms ease-out both;
+  -ms-animation: fadeIn 2s 700ms ease-out both;
+}
+.main-menu .fade-in__900ms {
+  animation: fadeIn 2s 900ms ease-out both;
+  -webkit-animation: fadeIn 2s 900ms ease-out both;
+  -moz-animation: fadeIn 2s 900ms ease-out both;
+  -o-animation: fadeIn 2s 900ms ease-out both;
+  -ms-animation: fadeIn 2s 900ms ease-out both;
 }
 .main-menu__button {
   display: flex;

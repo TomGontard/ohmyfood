@@ -106,6 +106,7 @@
         }
         &__subcategory{
             height: fit-content;
+            cursor: pointer;
             &__choice{
                 background-color: white;
                 box-shadow: 0px 5px 10px #999;
@@ -161,6 +162,18 @@
                     width:fit-content;
                 }
             }
+        }
+        .fade-in__300ms{
+            @include fadeIn($animation-fadeIn-300ms);
+        }
+        .fade-in__500ms{
+            @include fadeIn($animation-fadeIn-500ms);
+        }
+        .fade-in__700ms{
+            @include fadeIn($animation-fadeIn-700ms);
+        }
+        .fade-in__900ms{
+            @include fadeIn($animation-fadeIn-900ms);
         }
         &__button{
             display: flex;

@@ -4,3 +4,10 @@
     white-space: nowrap;
     overflow: hidden;
 }
+@mixin fadeIn($animation-fadeIn: $animation-fadeIn-300ms){
+    animation: $animation-fadeIn;
+    -webkit-animation: $animation-fadeIn;
+    -moz-animation: $animation-fadeIn;
+    -o-animation: $animation-fadeIn;
+    -ms-animation: $animation-fadeIn;
+}
