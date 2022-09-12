@@ -105,6 +105,18 @@
             }
         }
         &__subcategory{
+            &:nth-of-type(1){
+                @include fadeIn($animation-fadeIn-first-element);
+            }
+            &:nth-of-type(2){
+                @include fadeIn($animation-fadeIn-second-element);
+            }
+            &:nth-of-type(3){
+                @include fadeIn($animation-fadeIn-third-element);
+            }
+            &:nth-of-type(4){
+                @include fadeIn($animation-fadeIn-fourth-element);
+            }
             height: fit-content;
             cursor: pointer;
             &__choice{
@@ -162,18 +174,6 @@
                     width:fit-content;
                 }
             }
-        }
-        .fade-in__300ms{
-            @include fadeIn($animation-fadeIn-300ms);
-        }
-        .fade-in__500ms{
-            @include fadeIn($animation-fadeIn-500ms);
-        }
-        .fade-in__700ms{
-            @include fadeIn($animation-fadeIn-700ms);
-        }
-        .fade-in__900ms{
-            @include fadeIn($animation-fadeIn-900ms);
         }
         &__button{
             display: flex;

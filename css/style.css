@@ -321,6 +321,34 @@ a {
   height: fit-content;
   cursor: pointer;
 }
+.main-menu__subcategory:nth-of-type(1) {
+  animation: fadeIn 2s 300ms ease-out both;
+  -webkit-animation: fadeIn 2s 300ms ease-out both;
+  -moz-animation: fadeIn 2s 300ms ease-out both;
+  -o-animation: fadeIn 2s 300ms ease-out both;
+  -ms-animation: fadeIn 2s 300ms ease-out both;
+}
+.main-menu__subcategory:nth-of-type(2) {
+  animation: fadeIn 2s 500ms ease-out both;
+  -webkit-animation: fadeIn 2s 500ms ease-out both;
+  -moz-animation: fadeIn 2s 500ms ease-out both;
+  -o-animation: fadeIn 2s 500ms ease-out both;
+  -ms-animation: fadeIn 2s 500ms ease-out both;
+}
+.main-menu__subcategory:nth-of-type(3) {
+  animation: fadeIn 2s 700ms ease-out both;
+  -webkit-animation: fadeIn 2s 700ms ease-out both;
+  -moz-animation: fadeIn 2s 700ms ease-out both;
+  -o-animation: fadeIn 2s 700ms ease-out both;
+  -ms-animation: fadeIn 2s 700ms ease-out both;
+}
+.main-menu__subcategory:nth-of-type(4) {
+  animation: fadeIn 2s 900ms ease-out both;
+  -webkit-animation: fadeIn 2s 900ms ease-out both;
+  -moz-animation: fadeIn 2s 900ms ease-out both;
+  -o-animation: fadeIn 2s 900ms ease-out both;
+  -ms-animation: fadeIn 2s 900ms ease-out both;
+}
 .main-menu__subcategory__choice {
   background-color: white;
   box-shadow: 0px 5px 10px #999;
@@ -377,34 +405,6 @@ a {
   transform: translateX(0);
   visibility: visible;
   width: fit-content;
-}
-.main-menu .fade-in__300ms {
-  animation: fadeIn 2s 300ms ease-out both;
-  -webkit-animation: fadeIn 2s 300ms ease-out both;
-  -moz-animation: fadeIn 2s 300ms ease-out both;
-  -o-animation: fadeIn 2s 300ms ease-out both;
-  -ms-animation: fadeIn 2s 300ms ease-out both;
-}
-.main-menu .fade-in__500ms {
-  animation: fadeIn 2s 500ms ease-out both;
-  -webkit-animation: fadeIn 2s 500ms ease-out both;
-  -moz-animation: fadeIn 2s 500ms ease-out both;
-  -o-animation: fadeIn 2s 500ms ease-out both;
-  -ms-animation: fadeIn 2s 500ms ease-out both;
-}
-.main-menu .fade-in__700ms {
-  animation: fadeIn 2s 700ms ease-out both;
-  -webkit-animation: fadeIn 2s 700ms ease-out both;
-  -moz-animation: fadeIn 2s 700ms ease-out both;
-  -o-animation: fadeIn 2s 700ms ease-out both;
-  -ms-animation: fadeIn 2s 700ms ease-out both;
-}
-.main-menu .fade-in__900ms {
-  animation: fadeIn 2s 900ms ease-out both;
-  -webkit-animation: fadeIn 2s 900ms ease-out both;
-  -moz-animation: fadeIn 2s 900ms ease-out both;
-  -o-animation: fadeIn 2s 900ms ease-out both;
-  -ms-animation: fadeIn 2s 900ms ease-out both;
 }
 .main-menu__button {
   display: flex;

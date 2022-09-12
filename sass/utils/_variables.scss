@@ -11,9 +11,12 @@ $font-size-subtitles:6vw;
 $font-size-text: 5vw;
 $font-size-small-text: 4.5vw;
 
-$animation-fadeIn-300ms: fadeIn 2s 300ms ease-out both;
-$animation-fadeIn-500ms: fadeIn 2s 500ms ease-out both;
-$animation-fadeIn-700ms: fadeIn 2s 700ms ease-out both;
-$animation-fadeIn-900ms: fadeIn 2s 900ms ease-out both;
+$fadeIn-base-delay: 300ms;
+$fadeIn-additionnal-delay: 200ms;
+
+$animation-fadeIn-first-element: fadeIn 2s $fadeIn-base-delay ease-out both;
+$animation-fadeIn-second-element: fadeIn 2s $fadeIn-base-delay + $fadeIn-additionnal-delay ease-out both;
+$animation-fadeIn-third-element: fadeIn 2s $fadeIn-base-delay + 2*$fadeIn-additionnal-delay ease-out both;
+$animation-fadeIn-fourth-element: fadeIn 2s $fadeIn-base-delay + 3*$fadeIn-additionnal-delay ease-out both;
 
 $animation-goingUp-length: 40%;
