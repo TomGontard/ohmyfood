@@ -1,4 +1,5 @@
 $color-primary: #9356DC;
+$color-primary-lightened:lighten($color-primary,10%);
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-light-gray: lighten(grey,50%);
@@ -10,6 +11,7 @@ $font-size-titles:7vw;
 $font-size-subtitles:6vw;
 $font-size-text: 5vw;
 $font-size-small-text: 4.5vw;
+$font-size-tiny-text: 4vw;
 
 $fadeIn-base-delay: 300ms;
 $fadeIn-additionnal-delay: 200ms;

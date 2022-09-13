@@ -5,8 +5,12 @@
     color: white;
     font-size: $font-size-text;
     width: fit-content;
+    cursor: pointer;
     &--pink{
         background-color: $color-primary;
+        &:hover{
+            background-color: $color-primary-lightened;
+        }
     }
     &--enlarged{
         padding: 5vw 10vw;

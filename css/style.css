@@ -78,9 +78,13 @@ a {
   color: white;
   font-size: 5vw;
   width: fit-content;
+  cursor: pointer;
 }
 .btn--pink {
   background-color: #9356DC;
+}
+.btn--pink:hover {
+  background-color: #ae80e5;
 }
 .btn--enlarged {
   padding: 5vw 10vw;
@@ -218,6 +222,9 @@ a {
   padding: 5vw;
   background-color: white;
 }
+.main-index {
+  background-color: #f2f2f2;
+}
 .main-index h1 {
   padding-top: 5vw;
   font-size: 7vw;
@@ -232,27 +239,35 @@ a {
   box-shadow: 0px 5px 10px #999;
 }
 .main-index__card-restaurant__new-content {
+  position: relative;
+}
+.main-index__card-restaurant__new-content__content {
   position: absolute;
   background-color: #99E2D0;
-  color: #32b091;
-  padding: 0.5rem;
+  color: #278870;
+  font-size: 4vw;
+  padding: 1.5vw 2.5vw;
+  margin: 0px;
   border-radius: 5px;
-  top: 1rem;
-  right: 0.75rem;
-  z-index: 4;
+  top: 4vw;
+  right: 3.5vw;
+  z-index: 2;
 }
 .main-index__card-restaurant__image {
   display: flex;
-  height: 150px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   border-radius: 15px 15px 0px 0px;
 }
 .main-index__card-restaurant__image img {
-  height: 150px;
+  height: 260px;
   object-position: center;
   object-fit: cover;
   width: 100%;
+  top: -30%;
+  position: inherit;
+  z-index: 1;
 }
 .main-index__card-restaurant__content {
   display: flex;
