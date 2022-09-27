@@ -283,13 +283,26 @@ a {
   margin: 0px;
   font-size: 5vw;
 }
-.main-index__card-restaurant__content i {
-  display: flex;
-  flex: 100;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 3vw;
+.main-index__card-restaurant__content .favourite {
+  position: absolute;
+}
+.main-index__card-restaurant__content .heart {
+  position: relative;
   font-size: 6vw;
+  z-index: 1;
+  right: -75vw;
+  top: 5vw;
+}
+.main-index__card-restaurant__content .heart:hover .heart__animated {
+  opacity: 1;
+  z-index: 5;
+}
+.main-index__card-restaurant__content .heart__animated {
+  position: absolute;
+  opacity: 0;
+  color: #660000;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 .main-index__card-restaurant:visited {
   color: black;

@@ -62,13 +62,28 @@
                         font-size: $font-size-text;
                     }
                 }
-                i{
-                    display: flex;
-                    flex: 100;
-                    align-items: center;
-                    justify-content: flex-end;
-                    margin-right: 3vw;
+                .favourite{
+                    position: absolute;
+                }
+                .heart{
+                    position:relative;
                     font-size: $font-size-subtitles;
+                    z-index: 1;
+                    right: -75vw;
+                    top: 5vw;
+                    &:hover{
+                        .heart__animated{
+                            opacity: 1;
+                            z-index: 5;
+                        }
+                    }
+                    &__animated{
+                        position: absolute;
+                        opacity: 0;
+                        color: darken(red,30%);
+                        z-index: -1;
+                        transition: opacity 250ms;
+                    }
                 }
             }
         }
