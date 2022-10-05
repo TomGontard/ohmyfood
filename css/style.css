@@ -82,9 +82,10 @@ a {
 }
 .btn--pink {
   background-color: #9356DC;
+  background-image: linear-gradient(#FF79DA, #9356DC);
 }
 .btn--pink:hover {
-  background-color: #ae80e5;
+  background-image: linear-gradient(#ff8de0, #9e67e0);
 }
 .btn--enlarged {
   padding: 5vw 10vw;
@@ -104,7 +105,7 @@ a {
   flex-flow: wrap row;
   padding: 5vw;
   margin: 5vw;
-  font-size: 5vw;
+  font-size: 4.5vw;
 }
 .functionning__card-explanation__card-number {
   display: flex;
@@ -118,7 +119,7 @@ a {
   color: white;
 }
 .functionning__card-explanation i {
-  margin: 0vw 5vw;
+  margin: 0vw 4vw;
   display: flex;
   align-items: center;
   color: grey;
@@ -128,6 +129,14 @@ a {
   font-weight: bold;
   display: flex;
   align-items: center;
+}
+.functionning__card-explanation:hover {
+  background-color: #f2eafb;
+  transition: background-color 500ms;
+}
+.functionning__card-explanation:hover i {
+  color: #9356DC;
+  transition: color 500ms;
 }
 
 .header {

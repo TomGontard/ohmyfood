@@ -11,7 +11,7 @@
         flex-flow: wrap row;
         padding: 5vw;
         margin: 5vw;
-        font-size: $font-size-text;
+        font-size: $font-size-small-text;
         &__card-number{
             display: flex;
             align-items: center;
@@ -24,7 +24,7 @@
             color: white;
         }
         i{
-            margin: 0vw 5vw;
+            margin: 0vw 4vw;
             display: flex;
             align-items: center;
             color: $color-strong-gray;
@@ -34,6 +34,14 @@
             font-weight: bold;
             display: flex;
             align-items: center;
+        }
+        &:hover{
+            background-color: lighten($color-primary,35%);
+            transition: background-color 500ms;
+            i{
+                color: $color-primary;
+                transition: color 500ms;
+            }
         }
     }
 }

@@ -8,8 +8,9 @@
     cursor: pointer;
     &--pink{
         background-color: $color-primary;
+        background-image: linear-gradient($color-secondary, $color-primary);
         &:hover{
-            background-color: $color-primary-lightened;
+            background-image: linear-gradient($color-secondary-lightened, $color-primary-lightened)
         }
     }
     &--enlarged{
