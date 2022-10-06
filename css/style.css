@@ -77,6 +77,7 @@ a {
   padding: 3vw 5vw;
   color: white;
   font-size: 5vw;
+  box-shadow: 5px 10px 18px gray;
   width: fit-content;
   cursor: pointer;
 }
@@ -86,6 +87,8 @@ a {
 }
 .btn--pink:hover {
   background-image: linear-gradient(#ff8de0, #9e67e0);
+  box-shadow: 5px 10px 18px #676767;
+  transition: box-shadow 250ms;
 }
 .btn--enlarged {
   padding: 5vw 10vw;
@@ -295,23 +298,31 @@ a {
 .main-index__card-restaurant__content .favourite {
   position: absolute;
 }
-.main-index__card-restaurant__content .heart {
+.main-index__card-restaurant__content .favourite .heart {
   position: relative;
   font-size: 6vw;
-  z-index: 1;
   right: -75vw;
   top: 5vw;
+  z-index: 10;
 }
-.main-index__card-restaurant__content .heart:hover .heart__animated {
-  opacity: 1;
-  z-index: 5;
-}
-.main-index__card-restaurant__content .heart__animated {
+.main-index__card-restaurant__content .favourite .heart__animated {
   position: absolute;
+  font-size: 6vw;
+  right: -75vw;
+  top: 5vw;
+  z-index: 9;
   opacity: 0;
-  color: #660000;
-  z-index: -1;
-  transition: opacity 250ms;
+  color: transparent;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+}
+.main-index__card-restaurant__content .favourite:hover .heart {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.main-index__card-restaurant__content .favourite:hover .heart__animated {
+  opacity: 1;
+  transition: opacity 300ms;
 }
 .main-index__card-restaurant:visited {
   color: black;
@@ -346,13 +357,39 @@ a {
   font-family: "shrikhand";
   margin: 0px;
 }
-.main-menu__header i {
+.main-menu__header__heart {
   display: flex;
-  align-items: center;
-  flex: 100;
   justify-content: flex-end;
   padding-right: 5vw;
+  flex: 100;
+  position: relative;
+}
+.main-menu__header__heart__1 {
+  display: flex;
+  align-items: center;
   font-size: 7vw;
+  cursor: pointer;
+  position: relative;
+}
+.main-menu__header__heart__2 {
+  display: flex;
+  align-items: center;
+  font-size: 7vw;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  opacity: 0;
+  color: transparent;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+}
+.main-menu__header__heart .heart__1:hover {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.main-menu__header__heart .heart__2:hover {
+  opacity: 1;
+  transition: opacity 300ms;
 }
 .main-menu__subcategory {
   height: fit-content;

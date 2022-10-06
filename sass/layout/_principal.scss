@@ -64,27 +64,35 @@
                 }
                 .favourite{
                     position: absolute;
-                }
-                .heart{
-                    position:relative;
-                    font-size: $font-size-subtitles;
-                    z-index: 1;
-                    right: -75vw;
-                    top: 5vw;
-                    &:hover{
-                        .heart__animated{
-                            opacity: 1;
-                            z-index: 5;
+                    .heart{
+                        position:relative;
+                        font-size: $font-size-subtitles;
+                        right: -75vw;
+                        top: 5vw;
+                        z-index: 10;
+                        &__animated{
+                            position: absolute;
+                            font-size: $font-size-subtitles;
+                            right: -75vw;
+                            top: 5vw;
+                            z-index: 9;
+                            opacity: 0;
+                            color: transparent;
+                            background: -webkit-linear-gradient($color-primary,$color-secondary);
+                            -webkit-background-clip: text;
                         }
                     }
-                    &__animated{
-                        position: absolute;
-                        opacity: 0;
-                        color: darken(red,30%);
-                        z-index: -1;
-                        transition: opacity 250ms;
+                    &:hover{
+                        .heart{
+                            opacity: 0;
+                            transition: opacity 300ms;
+                            &__animated{
+                                opacity: 1;
+                                transition: opacity 300ms;
+                            }
+                        }
                     }
-                }
+               }
             }
         }
         &__card-restaurant:visited{
@@ -119,13 +127,39 @@
                 font-family: "shrikhand";
                 margin: 0px;
             }
-            i{
+            &__heart{
                 display: flex;
-                align-items: center;
-                flex: 100;
                 justify-content: flex-end;
                 padding-right: 5vw;
-                font-size: $font-size-titles;
+                flex: 100;
+                position: relative;
+                &__1{
+                    display: flex;
+                    align-items: center;
+                    font-size: $font-size-titles;
+                    cursor: pointer;
+                    position: relative;
+                }
+                &__2{
+                    display: flex;
+                    align-items: center;
+                    font-size: $font-size-titles;
+                    cursor: pointer;
+                    position: absolute;
+                    height: 100%;
+                    opacity: 0;
+                    color: transparent;
+                    background: -webkit-linear-gradient($color-primary,$color-secondary);
+                    -webkit-background-clip: text;
+                }
+                .heart__1:hover{
+                    opacity: 0;
+                    transition: opacity 300ms;
+                }
+                .heart__2:hover{
+                    opacity: 1;
+                    transition: opacity 300ms;
+                }
             }
         }
         &__subcategory{

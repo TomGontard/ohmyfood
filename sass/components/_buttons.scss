@@ -4,13 +4,16 @@
     padding: 3vw 5vw;
     color: white;
     font-size: $font-size-text;
+    box-shadow: 5px 10px 18px gray;
     width: fit-content;
     cursor: pointer;
     &--pink{
         background-color: $color-primary;
         background-image: linear-gradient($color-secondary, $color-primary);
         &:hover{
-            background-image: linear-gradient($color-secondary-lightened, $color-primary-lightened)
+            background-image: linear-gradient($color-secondary-lightened, $color-primary-lightened);
+            box-shadow: 5px 10px 18px darken(gray,10%);
+            transition: box-shadow 250ms;
         }
     }
     &--enlarged{
