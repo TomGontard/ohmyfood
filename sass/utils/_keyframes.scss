@@ -27,3 +27,89 @@
             transform: translateY($animation-goingUp-length); }
     to { opacity: 1; }
   }
+
+  @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        
+        25% {
+          transform: rotate(180deg);
+        }
+        
+        50% {
+          transform: rotate(180deg);
+        }
+        
+        75% {
+          transform: rotate(360deg);
+        }
+        
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      @keyframes loader-inner {
+        0% {
+          height: 0%;
+          background-color: $color-primary;
+        }
+        
+        25% {
+          height: 0%;
+          background-color: $color-primary;
+        }
+        
+        50% {
+          height: 100%;
+          background-color: $color-secondary;
+        }
+        
+        75% {
+          height: 100%;
+          background-color: $color-secondary;
+        }
+        
+        100% {
+          height: 0%;
+          background-color: $color-primary;
+        }
+      }
+      
+      @keyframes disappearing {
+          100% {
+              opacity: 0;
+              z-index: -15;
+          }
+      }
+      .progress {
+        &__bar {
+            animation: progress-bar 1000ms;
+        }
+    }
+
+@keyframes progress-bar{
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes moving-out{
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+@keyframes rotation{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
