@@ -497,6 +497,11 @@ a {
 .main-menu__subcategory {
   height: fit-content;
   cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px #999;
+  margin-bottom: 5vw;
+  border-radius: 3vw;
+  padding: 2.5vw;
 }
 .main-menu__subcategory:nth-of-type(1) {
   animation: fadeIn 2s 300ms ease-out both;
@@ -573,12 +578,8 @@ a {
 }
 .main-menu__subcategory__choice {
   background-color: white;
-  box-shadow: 0px 5px 10px #999;
-  border-radius: 3vw;
   display: flex;
   flex-flow: wrap row;
-  padding: 2.5vw;
-  margin-bottom: 5vw;
   font-size: 4.5vw;
   height: fit-content;
 }
