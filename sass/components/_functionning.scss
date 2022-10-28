@@ -1,46 +1,76 @@
 .functionning{
     padding: 5vw;
+    @include desktop-tablette-only{
+        padding: 1vw 3vw;
+        display: flex;
+        flex-flow: wrap column;
+    }
     h1{
         font-size: $font-size-titles;
+        @include desktop-tablette-only{
+            font-size: $font-size-titles-desktop;
+            text-align: center;
+        }
     }
-    &__card-explanation{
-        background-color: white;
-        box-shadow: 0px 5px 10px #999;
-        border-radius: 5vw;
-        display: flex;
-        flex-flow: wrap row;
-        padding: 5vw;
-        margin: 5vw;
-        font-size: $font-size-small-text;
-        &__card-number{
+    &__menu{
+        @include desktop-tablette-only{
             display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $color-primary;
-            width: 8vw;
-            height: 8vw;
-            border-radius: 100%;
-            margin-left: -8.5vw;
-            color: white;
         }
-        i{
-            margin: 0vw 4vw;
+        &__card-explanation{
+            background-color: white;
+            box-shadow: 0px 5px 10px #999;
+            border-radius: 5vw;
             display: flex;
-            align-items: center;
-            color: $color-strong-gray;
-        }
-        p{
-            margin: 0px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
-        &:hover{
-            background-color: lighten($color-primary,35%);
-            transition: background-color 500ms;
+            flex-flow: wrap row;
+            padding: 5vw;
+            margin: 5vw;
+            font-size: $font-size-small-text;
+            @include desktop-tablette-only{
+                font-size: $font-size-text-desktop;
+                padding: .5vw;
+                margin: .5vw 2.5vw 2vw 2.5vw;
+                width: 100%;
+                height: 3vw;
+            }
+            &__card-number{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $color-primary;
+                width: 8vw;
+                height: 8vw;
+                border-radius: 100%;
+                margin-left: -8.5vw;
+                color: white;
+                @include desktop-tablette-only{
+                    width: 2.5vw;
+                    height: 2.5vw;
+                    margin-left: -1.5vw;
+                    margin-top: 0.25vw;
+                }
+            }
             i{
-                color: $color-primary;
-                transition: color 500ms;
+                margin: 0vw 4vw;
+                display: flex;
+                align-items: center;
+                color: $color-strong-gray;
+                @include desktop-tablette-only{
+                    margin: 0vw 2vw;
+                }
+            }
+            p{
+                margin: 0px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+            }
+            &:hover{
+                background-color: lighten($color-primary,35%);
+                transition: background-color 500ms;
+                i{
+                    color: $color-primary;
+                    transition: color 500ms;
+                }
             }
         }
     }

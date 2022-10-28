@@ -7,13 +7,20 @@ $color-light-gray: lighten(grey,50%);
 $color-strong-gray: grey;
 
 $size-border-radius-card-restaurant: 15px;
+$size-border-radius-card-restaurant-desktop: 2.5vw;
+
 $initial-size-loader: 10vw;
 
 $font-size-titles:7vw;
+$font-size-titles-desktop:2vw;
 $font-size-subtitles:6vw;
+$font-size-subtitles-desktop:1.5vw;
 $font-size-text: 5vw;
+$font-size-text-desktop: 1.35vw;
 $font-size-small-text: 4.5vw;
+$font-size-small-text-desktop: 1.2vw;
 $font-size-tiny-text: 4vw;
+$font-size-tiny-text-desktop: 0.9vw;
 
 $time-animation-selection: 1s;
 
@@ -26,3 +33,6 @@ $animation-fadeIn-third-element: fadeIn 2s $fadeIn-base-delay + 2*$fadeIn-additi
 $animation-fadeIn-fourth-element: fadeIn 2s $fadeIn-base-delay + 3*$fadeIn-additionnal-delay ease-out both;
 
 $animation-goingUp-length: 40%;
+
+$mobile-responsive: 768px;
+$tablette-responsive: 1024px;

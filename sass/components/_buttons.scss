@@ -7,6 +7,10 @@
     box-shadow: 5px 10px 18px gray;
     width: fit-content;
     cursor: pointer;
+    @include desktop-tablette-only{
+        font-size: $font-size-subtitles-desktop;
+        padding: 1vw 1.5vw;
+    }
     &--pink{
         background-color: $color-primary;
         background-image: linear-gradient($color-secondary, $color-primary);
@@ -18,5 +22,8 @@
     }
     &--enlarged{
         padding: 5vw 10vw;
+        @include desktop-tablette-only{
+            padding: 1.5vw 3vw;
+        }
     }
 }

@@ -1,8 +1,26 @@
+@mixin desktop-tablette-only {
+    @media screen and (min-width: $mobile-responsive){
+        @content;
+    }
+}
+@mixin tablette-only {
+    @media screen and (min-width: $mobile-responsive) and (max-width: $tablette-responsive){
+        @content;
+    }
+}
+@mixin desktop-only {
+    @media screen and (min-width: $tablette-responsive){
+        @content;
+    }
+}
 @mixin reducing-text-lenght{
     width: 70vw;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    @include desktop-tablette-only{
+        width: 25vw;
+    }
 }
 @mixin fadeIn($animation-fadeIn: $animation-fadeIn-first-element){
     animation: $animation-fadeIn;

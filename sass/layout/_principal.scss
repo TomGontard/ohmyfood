@@ -2,97 +2,160 @@
     height : fit-content;
     padding: 5vw;
     background-color: $color-light-gray;
+    @include desktop-tablette-only{
+        padding: 2vw 5vw;
+    }
     &-index{
         background-color: darken($color-light-gray, 5%);
         h1{
             padding-top: 5vw;
             font-size: $font-size-titles;
+            @include desktop-tablette-only{
+                padding-top: 0vw;
+                margin: 0vw;
+                font-size: $font-size-titles-desktop;
+                display: flex;
+                justify-content: center;
+            }
         }
-        &__card-restaurant{
-            margin: 5vw 0vw;
-            border-radius: $size-border-radius-card-restaurant;
-            display: flex;
-            flex-flow: wrap column;
-            height : fit-content;
-            background-color: white;
-            box-shadow: 0px 5px 10px #999;
-            &__new-content{
-                position: relative;
-                &__content{
-                    position: absolute;
-                    background-color: $color-tertiary;
-                    color: darken($color-tertiary, 40%);
-                    font-size: $font-size-tiny-text;
-                    padding: 1.5vw 2.5vw;
-                    margin: 0px;
-                    border-radius: 5px;
-                    top: 4vw;
-                    right: 3.5vw;
-                    z-index: 2;
-                }
-            }
-            &__image{
+        &__menu{
+            @include desktop-tablette-only{
                 display: flex;
-                height: 200px;
-                position: relative;
-                overflow: hidden;
-                border-radius: $size-border-radius-card-restaurant $size-border-radius-card-restaurant 0px 0px;
-                img{
-                    height: 260px;
-                    object-position: center;
-                    object-fit: cover;
-                    width: 100%;
-                    top: -30%;
-                    position: inherit;
-                    z-index: 1;
-                }
             }
-            &__content{
+            &__card-restaurant{
+                margin: 5vw 0vw;
+                border-radius: $size-border-radius-card-restaurant;
                 display: flex;
-                height: fit-content;
-                padding: 5vw 3vw;
-                color: black;
-                &__text{
-                    h2{
-                        margin: 0px;
-                        font-size: $font-size-subtitles;
-                    }
-                    p{
-                        margin: 0px;
-                        font-size: $font-size-text;
-                    }
+                flex-flow: wrap column;
+                height : fit-content;
+                background-color: white;
+                box-shadow: 0px 5px 10px #999;
+                @include desktop-tablette-only{
+                    width: 22.5%;
+                    margin: 2vw 1.5vw;
                 }
-                .favourite{
-                    position: absolute;
-                    .heart{
-                        position:relative;
-                        font-size: $font-size-subtitles;
-                        right: -75vw;
-                        top: 5vw;
-                        z-index: 10;
-                        &__animated{
-                            position: absolute;
-                            font-size: $font-size-subtitles;
-                            right: -75vw;
-                            top: 5vw;
-                            z-index: 9;
-                            opacity: 0;
-                            color: transparent;
-                            background: -webkit-linear-gradient($color-primary,$color-secondary);
-                            -webkit-background-clip: text;
+                @include desktop-only{
+                    border-radius: $size-border-radius-card-restaurant-desktop;
+                }
+                &__new-content{
+                    position: relative;
+                    &__content{
+                        position: absolute;
+                        background-color: $color-tertiary;
+                        color: darken($color-tertiary, 40%);
+                        font-size: $font-size-tiny-text;
+                        padding: 1.5vw 2.5vw;
+                        margin: 0px;
+                        border-radius: 5px;
+                        top: 4vw;
+                        right: 3.5vw;
+                        z-index: 2;
+                        @include desktop-tablette-only{
+                            font-size: $font-size-subtitles-desktop;
+                            padding: 0.5vw 1vw;
+                            top: 1.5vw;
+                            right: 1.5vw;
                         }
                     }
-                    &:hover{
-                        .heart{
-                            opacity: 0;
-                            transition: opacity 300ms;
-                            &__animated{
-                                opacity: 1;
-                                transition: opacity 300ms;
+                }
+                &__image{
+                    display: flex;
+                    height: 200px;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: $size-border-radius-card-restaurant $size-border-radius-card-restaurant 0px 0px;
+                    @include tablette-only{
+                        height: 10vw;
+                    }
+                    @include desktop-only{
+                        height: 8vw;
+                        border-radius: $size-border-radius-card-restaurant-desktop $size-border-radius-card-restaurant-desktop 0px 0px;
+                    }
+                    img{
+                        height: 260px;
+                        object-position: center;
+                        object-fit: cover;
+                        width: 100%;
+                        top: -30%;
+                        position: inherit;
+                        z-index: 1;
+                        @include tablette-only{
+                            height: 10vw;
+                        }
+                        @include desktop-only{
+                            height: 8vw;
+                        }
+                        @include desktop-tablette-only{
+                            top: 0%;
+                        }
+                    }
+                }
+                &__content{
+                    display: flex;
+                    height: fit-content;
+                    padding: 5vw 3vw;
+                    color: black;
+                    @include desktop-tablette-only{
+                        padding: 1vw 1.5vw;
+                    }
+                    &__text{
+                        h2{
+                            margin: 0px;
+                            font-size: $font-size-subtitles;
+                            @include desktop-tablette-only{
+                                font-size: 1.75vw;
+                            }
+                        }
+                        p{
+                            margin: 0px;
+                            font-size: $font-size-text;
+                            @include desktop-tablette-only{
+                                font-size: 1.5vw;
                             }
                         }
                     }
-               }
+                    .favourite{
+                        position: absolute;
+                        .heart{
+                            position:relative;
+                            font-size: $font-size-subtitles;
+                            right: -75vw;
+                            top: 5vw;
+                            z-index: 10;
+                            @include desktop-tablette-only{
+                                right: -15vw;
+                                top: 2vw;
+                                font-size: 2vw;
+                            }
+                            &__animated{
+                                position: absolute;
+                                font-size: $font-size-subtitles;
+                                right: -75vw;
+                                top: 5vw;
+                                z-index: 9;
+                                opacity: 0;
+                                color: transparent;
+                                background: -webkit-linear-gradient($color-primary,$color-secondary);
+                                -webkit-background-clip: text;
+                                @include desktop-tablette-only{
+                                    right: -15vw;
+                                    top: 2vw;
+                                    font-size: 2vw;
+                                }
+                            }
+                        }
+                        &:hover{
+                            .heart{
+                                opacity: 0;
+                                transition: opacity 300ms;
+                                &__animated{
+                                    opacity: 1;
+                                    transition: opacity 300ms;
+                                }
+                            }
+                        }
+                }
+                }
             }
         }
         &__card-restaurant:visited{
@@ -103,13 +166,35 @@
         border-radius: 10vw 10vw 0vw 0vw;
         margin-top: -10vw;
         height: fit-content;
+        @include desktop-tablette-only{
+            margin-top: -37.5vw;
+        }
+        &-actual_menu{
+            @include desktop-tablette-only{
+                display: flex;
+            }
+            &__choice{
+                @for $i from 1 through 2{
+                    &:nth-child(#{$i}){
+                        margin-right: 4vw;
+                    }
+                }
+            }
+        }
         h2{
-            margin: 0vw 0vw 5vw 0vw;
-            padding: 10vw 0vw 2vw 0vw;
+            margin: 0vw 0vw 5vw;
+            padding: 10vw 0vw 2vw;
             font-size: $font-size-titles;
             font-family: 'Roboto-Light', 'Roboto', Arial, Helvetica, sans-serif;
             font-weight: lighter;
             position: relative;
+            @include desktop-tablette-only{
+                padding: 2vw 0vw 1vw;
+                font-size: $font-size-titles-desktop;
+                margin: 0vw 0vw 2vw;
+                display: flex;
+                justify-content: center;
+            }
             &::after{
                 content: "";
                 width: 14vw;
@@ -118,14 +203,26 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
+                @include desktop-tablette-only{
+                    width: 5vw;
+                    left: auto;
+                }
             }
         }
         &__header{
             display: flex;
+            @include desktop-tablette-only{
+                align-items: center;
+                justify-content: center;
+            }
             h1{
                 font-size: $font-size-titles;
                 font-family: "shrikhand";
                 margin: 0px;
+                @include desktop-tablette-only{
+                    font-size: $font-size-titles-desktop;
+                    margin: auto;
+                }
             }
             &__heart{
                 display: flex;
@@ -133,12 +230,21 @@
                 padding-right: 5vw;
                 flex: 100;
                 position: relative;
+                @include desktop-tablette-only{
+                    margin-right: -85vw;
+                    position: absolute;
+                    top: 39.5vw;
+                    padding-right: auto;
+                }
                 &__1{
                     display: flex;
                     align-items: center;
                     font-size: $font-size-titles;
                     cursor: pointer;
                     position: relative;
+                    @include desktop-tablette-only{
+                        font-size: 3vw;
+                    }
                 }
                 &__2{
                     display: flex;
@@ -151,6 +257,9 @@
                     color: transparent;
                     background: -webkit-linear-gradient($color-primary,$color-secondary);
                     -webkit-background-clip: text;
+                    @include desktop-tablette-only{
+                        font-size: 3vw;
+                    }
                 }
                 .heart__1:hover{
                     opacity: 0;
@@ -182,14 +291,24 @@
             margin-bottom: 5vw;
             border-radius: 3vw;
             padding: 2.5vw;
+            @include desktop-tablette-only{
+                margin-bottom: 2vw;
+                padding: 1.25vw;
+            }
             &:hover{
                 h3, p{
                     width: 50vw;
                     transition: width $time-animation-selection ease-in-out;
+                    @include desktop-tablette-only{
+                        width: 18.75vw;
+                    }
                 }
                 .shrink_animation{
                     margin-right: 20vw;
                     transition: margin-right $time-animation-selection ease-in-out;
+                    @include desktop-tablette-only{
+                        margin-right: 6.25vw;
+                    }
                 }
                 .appearing-block{
                     transform: translateX(-100%);
@@ -210,6 +329,9 @@
                 transform-origin: right center;
                 z-index: -1;
                 transition: all 1s ease-in-out;
+                @include desktop-tablette-only{
+                    width: 25%;
+                }
                 &__block{
                     height: 100%;
                     width: 100%;
@@ -222,9 +344,15 @@
                         position: absolute;
                         left: 35%;
                         background-color: $color-tertiary;
+                        @include desktop-tablette-only{
+                            left: 37.5%;
+                        }
                         i{
                             font-size: $font-size-subtitles;
                             color: white;
+                            @include desktop-tablette-only{
+                                font-size: $font-size-titles-desktop;
+                            }
                         }
                     }
                 }
@@ -235,6 +363,9 @@
                 flex-flow: wrap row;
                 font-size: $font-size-small-text;
                 height: fit-content;
+                @include desktop-tablette-only{
+                    font-size: 1.25vw;
+                }
                 &__text{
                     display: flex;
                     flex-flow: wrap column;
@@ -267,6 +398,9 @@
             justify-content: center;
             align-items: center;
             margin: 12vw 0vw 15vw 0vw;
+            @include desktop-tablette-only{
+                margin: 2vw 0vw 3vw;
+            }
         }
     }
 }
