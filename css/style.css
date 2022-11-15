@@ -140,7 +140,6 @@ mark {
 }
 
 a {
-  font-style: none;
   text-decoration: none;
 }
 
@@ -732,7 +731,6 @@ a {
     margin-right: -85vw;
     position: absolute;
     top: 39.5vw;
-    padding-right: auto;
   }
 }
 .main-menu__header__heart__1 {
