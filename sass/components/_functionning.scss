@@ -1,7 +1,8 @@
 .functionning{
     padding: 5vw;
     @include desktop-tablette-only{
-        padding: 1vw 3vw;
+        padding: 2vw 3vw;
+        margin: 1vw 0vw 2vw;
         display: flex;
         flex-flow: wrap column;
     }
@@ -15,6 +16,7 @@
     &__menu{
         @include desktop-tablette-only{
             display: flex;
+            margin: 2vw 0vw 1vw;
         }
         &__card-explanation{
             background-color: white;
@@ -27,8 +29,8 @@
             font-size: $font-size-small-text;
             @include desktop-tablette-only{
                 font-size: $font-size-text-desktop;
-                padding: .5vw;
-                margin: .5vw 2.5vw 2vw 2.5vw;
+                padding: .5vw 1vw .5vw 2vw;
+                margin: .5vw 3vw 2vw;
                 width: 100%;
                 height: 3vw;
             }

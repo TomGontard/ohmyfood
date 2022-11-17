@@ -3,7 +3,7 @@
     padding: 5vw;
     background-color: $color-light-gray;
     @include desktop-tablette-only{
-        padding: 2vw 5vw;
+        padding: 2vw 5vw 3vw;
     }
     &-index{
         background-color: darken($color-light-gray, 5%);
@@ -11,7 +11,7 @@
             padding-top: 5vw;
             font-size: $font-size-titles;
             @include desktop-tablette-only{
-                padding-top: 0vw;
+                padding: 1vw 0vw;
                 margin: 0vw;
                 font-size: $font-size-titles-desktop;
                 display: flex;
@@ -51,10 +51,10 @@
                         right: 3.5vw;
                         z-index: 2;
                         @include desktop-tablette-only{
-                            font-size: $font-size-subtitles-desktop;
-                            padding: 0.5vw 1vw;
-                            top: 1.5vw;
-                            right: 1.5vw;
+                            font-size: $font-size-text-desktop;
+                            padding: 0.25vw 0.5vw;
+                            top: 1.25vw;
+                            right: 1.25vw;
                         }
                     }
                 }
@@ -103,14 +103,14 @@
                             margin: 0px;
                             font-size: $font-size-subtitles;
                             @include desktop-tablette-only{
-                                font-size: 1.75vw;
+                                font-size: $font-size-subtitles-desktop;
                             }
                         }
                         p{
                             margin: 0px;
                             font-size: $font-size-text;
                             @include desktop-tablette-only{
-                                font-size: 1.5vw;
+                                font-size: $font-size-subtitles-desktop ;
                             }
                         }
                     }
@@ -124,8 +124,8 @@
                             z-index: 10;
                             @include desktop-tablette-only{
                                 right: -15vw;
-                                top: 2vw;
-                                font-size: 2vw;
+                                top: 1vw;
+                                font-size: 1.75vw;
                             }
                             &__animated{
                                 position: absolute;
@@ -139,8 +139,8 @@
                                 -webkit-background-clip: text;
                                 @include desktop-tablette-only{
                                     right: -15vw;
-                                    top: 2vw;
-                                    font-size: 2vw;
+                                    top: 1vw;
+                                    font-size: 1.75vw;
                                 }
                             }
                         }
@@ -242,7 +242,7 @@
                     cursor: pointer;
                     position: relative;
                     @include desktop-tablette-only{
-                        font-size: 3vw;
+                        font-size: 2.5vw;
                     }
                 }
                 &__2{
@@ -257,7 +257,7 @@
                     background: -webkit-linear-gradient($color-primary,$color-secondary);
                     -webkit-background-clip: text;
                     @include desktop-tablette-only{
-                        font-size: 3vw;
+                        font-size: 2.5vw;
                     }
                 }
                 .heart__1:hover{
@@ -363,7 +363,7 @@
                 font-size: $font-size-small-text;
                 height: fit-content;
                 @include desktop-tablette-only{
-                    font-size: 1.25vw;
+                    font-size: $font-size-text-desktop ;
                 }
                 &__text{
                     display: flex;
