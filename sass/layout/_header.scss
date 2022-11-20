@@ -91,9 +91,7 @@
                 object-position: center;
                 object-fit: cover;
                 z-index: -1;
-                @include desktop-tablette-only{
-                    width: 100%;
-                }
+                width: 100%;
             }
         }
     }

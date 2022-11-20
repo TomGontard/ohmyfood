@@ -405,11 +405,7 @@ a {
   object-position: center;
   object-fit: cover;
   z-index: -1;
-}
-@media screen and (min-width: 768px) {
-  .header-restaurant__img img {
-    width: 100%;
-  }
+  width: 100%;
 }
 .header__menu {
   display: flex;
@@ -663,11 +659,15 @@ a {
     display: flex;
   }
 }
-.main-menu-actual_menu__choice:nth-child(1) {
-  margin-right: 4vw;
+@media screen and (min-width: 768px) {
+  .main-menu-actual_menu__choice:nth-child(1) {
+    margin-right: 4vw;
+  }
 }
-.main-menu-actual_menu__choice:nth-child(2) {
-  margin-right: 4vw;
+@media screen and (min-width: 768px) {
+  .main-menu-actual_menu__choice:nth-child(2) {
+    margin-right: 4vw;
+  }
 }
 .main-menu h2 {
   margin: 0vw 0vw 5vw;

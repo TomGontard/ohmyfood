@@ -175,8 +175,10 @@
             }
             &__choice{
                 @for $i from 1 through 2{
-                    &:nth-child(#{$i}){
-                        margin-right: 4vw;
+                    @include desktop-tablette-only{
+                        &:nth-child(#{$i}){
+                            margin-right: 4vw;
+                        }
                     }
                 }
             }
